@@ -3,5 +3,5 @@
 _pages/feature.md
 
 # localfileのため不要
-.saas-cache/
+.sass-cache/
 _site/
