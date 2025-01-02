@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-02T14:57:06+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">KAKITOME</title><subtitle>akihiros.github.io</subtitle><author><name>akihiros</name></author><entry><title type="html">Hello World!</title><link href="http://localhost:4000/hello-world/" rel="alternate" type="text/html" title="Hello World!" /><published>2024-12-19T00:00:00+09:00</published><updated>2024-12-19T00:00:00+09:00</updated><id>http://localhost:4000/hello-world</id><content type="html" xml:base="http://localhost:4000/hello-world/"><![CDATA[<p>これはテスト投稿です。</p>
+
+<h2 id="h2タグ">H2タグ</h2>
+
+<ul>
+  <li>箇条書き
+    <ul>
+      <li>あああ</li>
+      <li>いいい</li>
+      <li>ううう</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="h3タグ">H3タグ</h3>
+
+<p>コードブロックの例。</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># python
+</span><span class="k">print</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>aaa</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># bash</span>
+<span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"Hello, World!"</span>
+</code></pre></div></div>
+
+<h4 id="h4タグ">H4タグ</h4>
+
+<p>ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>]]></content><author><name>akihiros</name></author><category term="Other" /><summary type="html"><![CDATA[これはテスト投稿です。]]></summary></entry></feed>
