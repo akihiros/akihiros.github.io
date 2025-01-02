@@ -1,0 +1,7 @@
+.git
+
+_pages/feature.md
+
+# localfileのため不要
+.sass-cache/
+_site/
