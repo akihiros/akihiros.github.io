@@ -17,6 +17,7 @@ avatar: /images/myicon.jpg
 #
 # Flags below are optional
 #
+future: true
 
 # Includes an icon in the footer for each username you enter
 footer-links:
