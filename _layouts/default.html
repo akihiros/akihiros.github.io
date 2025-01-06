@@ -5,15 +5,13 @@
     {% seo title=false %}
     {% include meta.html %}
     
-    <!-- CSPポリシー -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
     <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/myicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include analytics_head.html %}
   </head>
 
@@ -53,7 +51,7 @@
         <div class="container">
           <footer class="footer">
             {% include svg-icons.html %}
-            <p class="copyright">Copyright &copy; 2024-2025 akihiros All rights reserved.</p>
+            <p class="copyright">Copyright © 2024-2025 akihiros All rights reserved.</p>
           </footer>
         </div>
       </div>
@@ -62,4 +60,3 @@
     {% include analytics.html %}
   </body>
 </html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
