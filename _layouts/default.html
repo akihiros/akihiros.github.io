@@ -4,6 +4,19 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
     {% seo title=false %}
     {% include meta.html %}
+    
+    <!-- CSPポリシー -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://*.github.com https://www.google-analytics.com https://www.googletagmanager.com;
+    style-src 'self' 'unsafe-inline' https://*.github.io;
+    img-src 'self' data: https://*.github.io https://*.githubusercontent.com https://www.google-analytics.com;
+    font-src 'self' data:;
+    connect-src 'self' https://*.github.io https://www.google-analytics.com;
+    frame-ancestors 'none';
+    form-action 'self';
+    base-uri 'self';
+    object-src 'none';">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
@@ -50,7 +63,7 @@
         <div class="container">
           <footer class="footer">
             {% include svg-icons.html %}
-            <p class="copyright">Copyright &copy; 2024 akihiros All rights reserved.</p>
+            <p class="copyright">Copyright &copy; 2024-2025 akihiros All rights reserved.</p>
           </footer>
         </div>
       </div>
