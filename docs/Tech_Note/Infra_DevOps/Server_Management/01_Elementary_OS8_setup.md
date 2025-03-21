@@ -1,12 +1,11 @@
 ---
-layout: post
-title:  Windowsを削除してElementary OS 8を導入してみた
-categories: [ElementaryOS]
+layout: default
+nav_order: 2
+title: Elementary OS 8 セットアップ手順
+parent: サーバー管理
 ---
 
-年末年始の片付け…というわけでもないが、普段使っていないノートPCがあることに気づいた。端末名は多分`Spectre x360 13-ae071TU Special Edition ベーシックモデル`で発売当時はそこそこの高スペックだった気がする。見た目がかっこいいので20万くらいで買ったが、キーボードの配列が打ちにくく後悔したのを覚えている（現在の中古価格は約7万）。
-
-そんな本機も暫く使われていなかったとはいえタッチパッドの動作が不安定で、動きもモッサリ。しかもすぐ火を吹くような熱さになる。何かの用途で使いたい気持ちはあるが、これではあまりに使い勝手が悪い。Windows11が入っているのでサポート期限的には現役だが、メモリ不足もありそうなのでOSごと吹き飛ばすことにした。
+# Elementary OS 8 セットアップ手順
 
 - [本題](#本題)
 - [事前準備](#事前準備)
@@ -17,13 +16,12 @@ categories: [ElementaryOS]
   - [VSCodeのインストール](#vscodeのインストール)
   - [Gitのインストール](#gitのインストール)
   - [Dockerのインストール](#dockerのインストール)
-- [OSを入れ替えてみた感想](#osを入れ替えてみた感想)
 
 ## 本題
 
-というわけで選ばれた`Elementary OS 8`だが、これはUbuntu 24.04LTSをベースとしたMacライクなOSである。本当は安直にUbuntuを入れようかと思っていたが、せっかくなので使った経験のないOSを導入してみることにした。RHEL系はCentOSの件があって以来、決定版的なOSを見つけられていないので却下。
+`Elementary OS 8`はUbuntu 24.04LTSをベースとしたMacライクなOSである。本当は安直にUbuntuを入れようかと思っていたが、せっかくなので使った経験のないOSを導入してみることにした。RHEL系はCentOSの件があって以来、決定版的なOSを見つけられていないので却下。
 
-本稿はWindowsをディスクから削除してElementary OS 8を導入＆セットアップした手順を残す。
+本稿はWindows10をディスクから削除してElementary OS 8を導入＆セットアップした手順を残す。
 
 ## 事前準備
 
@@ -58,12 +56,12 @@ sudo ufw status verbose  # アクティブ
 - 初期設定時に日本語を選択すると`ibus-mozc`が自動インストールされるが、そのままでは日本語入力できないため少々追加で設定が必要
 - キーボードの`レイアウト`は`日本語(デフォルト)`を選択
 
-![](../images/posts/image001.png)
+![](../../../images/image001.png)
 
 - `インプットメソッド`が空だと日本語入力できないため`日本語(Mozc)`を追加する
 - バー右上にある`ja`を押下し`日本語(Mozc)`にチェックが入っていれば日本語入力できるはず
 
-![](../images/posts/image002.png)
+![](../../../images/image002.png)
 
 ### Google Chromeのインストール
 
@@ -146,11 +144,3 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 # ※ 反映には再ログインが必要
 sudo usermod -aG docker $USER
 ```
-
-## OSを入れ替えてみた感想
-
-現状とても良い。AppCenterが謎に使えなかったり不便な箇所も所々あるが、aptで解決すれば良いので「ITエンジニアであれば」それほど不満なく使えそうな気配がある（Elementary OSの目指すところではなさそうだが）。あえて言うならufwだけデフォルトで有効にしてくれないかな。
-
-何よりもメモリが軽くなったのか、一切バッテリーが熱を持たなくなり電池の減りも物凄い減った。Windowsって存在自体が重いんだなと改めて思った。
-
-ついでにGithub pagesに本稿を投稿できるよう、jekyll環境もdocker化した。dockerhubにjekyll用のイメージも上がってたが、どうやら個人管理かつ全くメンテナンスされてなさそうだったので、RubyのOfficial(alpine)から適当にdockerfileを作った。これはまた別の機会に書くことにする。

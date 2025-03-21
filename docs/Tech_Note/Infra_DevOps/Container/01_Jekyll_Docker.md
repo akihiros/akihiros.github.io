@@ -1,18 +1,17 @@
 ---
-layout: post
-title:  Github Pages(jekyll)用のDocker環境を作った
-categories: [Docker]
-published: true
+layout: default
+title:  Jekyll Docker
+parent: コンテナ
 ---
 
-前回、余った端末にElementary OS 8を導入してみた話を書いた。その経緯を忘れないようこのブログに書いたわけだが、当然Github Pagesに投稿するにはPJをCloneしてローカルにJekyllを実行できる環境を揃えなければならない（`_post`配下にmdファイルを追加するだけなので厳密にはローカルでローカルで実行できなくても然程影響はないが）。そこで本機にも実行環境を作りたいところだが、できればそのまま環境構築するのは避けたいところである。
+# Jekyll Docker
 
-他のRubyアプリへの影響や、機器を入れ替えたときの利便性を考えてDockerfileにすることにした。どうやらOfficial？のJekyll用dockerイメージも配布されている（[リンク](https://hub.docker.com/r/jekyll/jekyll)）が、更新が２年前で止まっておりメンテナンスされていないように見える。jekyllが使えるようにするだけならそれ程大変ではないはずなので、個人用にDockerfileを作成することにした。
+Official？のJekyll用dockerイメージも配布されている（[リンク](https://hub.docker.com/r/jekyll/jekyll)）が、更新が２年前で止まっておりメンテナンスされていないように見える。jekyllが使えるようにするだけならそれ程大変ではないはずなので、個人用にDockerfileを作成することにした。
 
 - [本題](#本題)
 - [簡易解説](#簡易解説)
 - [使い方](#使い方)
-- [所感](#所感)
+- [備考](#備考)
 
 ## 本題
 
@@ -68,6 +67,7 @@ jekyll       latest    242cd1664d71   1 minutes ago   467MB
 $ sudo docker run --rm -it -p 4000:4000 -v $(pwd):/jekyll jekyll
 ```
 
-## 所感
+## 備考
 
-`docker run`ごとにライブラリをインストールする仕様のため、起動に多少時間がかかるが、ローカルを汚さずjekyllの実行環境を作ることができた。仮想化技術はあまり深く触れてこなかった悲しい人間なので、今年はK8s含め仮想化と仲良しになれるくらい頑張っていきたい。
+- jekyllのテーマによってはエラーが出る可能性があるが、その場合はGemfileの修正が必要になる
+- これはalpineの仕様によるものが多く、例えばjust-the-docsでは`gem "jekyll-sass-converter", "~> 2.0"`を追加しエラーを回避した
