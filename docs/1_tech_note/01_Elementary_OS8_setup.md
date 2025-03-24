@@ -1,11 +1,11 @@
 ---
 layout: default
-nav_order: 2
-title: Elementary OS 8 セットアップ手順
-parent: サーバー管理
+title: 1.1 Elementary OS 8 セットアップ手順
+parent: 1. 技術メモ
+nav_order: 1
 ---
 
-# Elementary OS 8 セットアップ手順
+# 1.1 Elementary OS 8 セットアップ手順
 
 - [本題](#本題)
 - [事前準備](#事前準備)

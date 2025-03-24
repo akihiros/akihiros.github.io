@@ -1,9 +1,9 @@
 ---
-title: 技術メモ
+title: 2. 技術書
 layout: default
 nav_order: 2
 ---
 
-# 技術メモ
+# 2. 技術書
 
 {: .fs-6 .fw-300 }

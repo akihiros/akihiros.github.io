@@ -1,10 +1,11 @@
 ---
 layout: default
-title:  Jekyll Docker
-parent: コンテナ
+title: 1.2 Jekyll Docker
+parent: 1. 技術メモ
+nav_order: 2
 ---
 
-# Jekyll Docker
+# 1.2 Jekyll Docker
 
 Official？のJekyll用dockerイメージも配布されている（[リンク](https://hub.docker.com/r/jekyll/jekyll)）が、更新が２年前で止まっておりメンテナンスされていないように見える。jekyllが使えるようにするだけならそれ程大変ではないはずなので、個人用にDockerfileを作成することにした。
 
