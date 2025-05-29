@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  jekyll:
+    image: akihiros1207/jekyll-env
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/jekyll
+    stdin_open: true
+    tty: true
