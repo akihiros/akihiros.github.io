@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Windowsを削除してElementary OS 8を導入してみた
-categories: [ElementaryOS]
+categories: [ブログ]
 ---
 
 年末年始の片付け…というわけでもないが、普段使っていないノートPCがあることに気づいた。端末名は多分`Spectre x360 13-ae071TU Special Edition ベーシックモデル`で発売当時はそこそこの高スペックだった気がする。見た目がかっこいいので20万くらいで買ったが、キーボードの配列が打ちにくく後悔したのを覚えている（現在の中古価格は約7万）。

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Github Pages(jekyll)用のDocker環境を作った
-categories: [Docker]
+categories: [ブログ]
 published: true
 ---
 
