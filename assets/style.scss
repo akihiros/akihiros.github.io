@@ -26,14 +26,14 @@ body {
   color: #404040;
   line-height: 1.7;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   height: 100%;
   counter-reset: h2counter h3counter h4counter;  
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
 }
@@ -61,14 +61,26 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 24px;
-  counter-increment: h2counter;  // h2のカウンターをインクリメント
-  
+  margin: 3rem 0 2rem;
+  counter-increment: h2counter;
+
   &:not(.category-head)::before {
-    content: counter(h2counter) ". ";  // 番号を表示
-    color: #333;
+    content: counter(h2counter) ". ";
+    color: #666;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #333;
+    margin: 0.7rem auto 0;
   }
 }
+
 
 // @media (min-width: 769px){
 // 	.post h2::before, .post h2::after {
@@ -82,12 +94,29 @@ h2 {
 // 	}
 // }
 
+// h3 {
+//   font-size: 20px;
+// }
+
 h3 {
   font-size: 20px;
+  margin: 2.5rem 0 1.5rem;
+  padding: 0.6rem 1rem;
+  border-left: 4px solid #333;
+  border-radius: 3px;
+  counter-increment: h3counter;
 }
+
+// h4 {
+//   font-size: 18px;
+//   color: #222;
+// }
 
 h4 {
   font-size: 18px;
+  margin: 2rem 0 1rem;
+  padding-left: 0.8rem;
+  border-left: 3px solid #666;
   color: #222;
 }
 
