@@ -61,24 +61,14 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-size: 24px;
-  margin: 3rem 0 2rem;
-  counter-increment: h2counter;
-
-  &:not(.category-head)::before {
-    content: counter(h2counter) ". ";
-    color: #666;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 2px;
-    background: #333;
-    margin: 0.7rem auto 0;
-  }
+  margin: 3rem 0 1.5rem;
+  padding-left: 0.8rem;
+  padding-bottom: 0.4rem;
+  border-left: 4px solid #333;
+  border-bottom: 1px solid #ddd;
+  line-height: 1.4;
+  color: #222;
 }
 
 
@@ -104,7 +94,6 @@ h3 {
   padding: 0.6rem 1rem;
   border-left: 4px solid #333;
   border-radius: 3px;
-  counter-increment: h3counter;
 }
 
 // h4 {

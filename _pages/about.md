@@ -4,13 +4,11 @@ title: About
 permalink: /about/
 ---
 
-## How it's published
+## What
 
-ブログの公開にはGitHub Pages + [Jekyll](https://jekyllrb.com/)を利用しています。テーマには[reverie](https://reverie.pages.dev/)を利用しています。詳細はフォーム元のリポジトリをご参照ください。
+当ブログは、筆者が学んだことや調べたことを備忘録としてまとめています。内容については正確性を保証できない場合がありますので、ご理解のうえご利用ください。免責事項の詳細は[policy](../policy/)をご覧ください。
 
-## About this blog
-
-当ブログはakihriosが学んだ内容やメモを置く場所です。内容の保証はできませんのでご了承ください。免責事項は[policy](../policy/)をご覧ください。
+当ブログは[Jekyll](https://jekyllrb.com/) ([reverie](https://reverie.pages.dev/)) を使用し、GitHub Pagesで公開されています。
 
 ## Pages
 
